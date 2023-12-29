@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(background.jpg);
+    background-size: cover;
+}
+
+.pc {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.pc h1 {
+    font-family: cursive;
+    color: #3d4852;
+    font-size: 54px;
+    text-shadow: 3px 3px rgb(53, 17, 0);
+}
+
+.disclaimer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.disclaimer p {
+    width: 100vw;
+    height: 100px;
+    font-size: 1.5rem;
+}
+
+.rules {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.rulesHeading {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    background: url(Dice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-title {
+    color: brown;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 60px;
+    color: rgb(250, 160, 160);
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.det {
+    text-decoration: none;
+    color: #23a385;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    border: 2px solid #23a385;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.det:hover {
+    background-color: #23a385;
+    color: white;
+}
+
+.detailForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+
+}
+
+.detailForms {
+    height: 700px;
+    width: 40%;
+    border-radius: 10px;
+    border: 5px solid #23a385;
+    text-align: center;
+    padding: 20px;
+}
+
+.formheading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    height: 70px;
+    padding: 10px;
+    background-color: #23a385;
+    width: 500px;
+    color: white;
+    border-radius: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px;
+    border: 2px solid #02755a;
+    width: 400px;
+    margin-left: 80px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.input {
+    margin: 20px;
+    width: 300px;
+    height: inherit;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+#submit {
+    height: inherit;
+    width: 200px;
+    border: 2px solid #5d99d1;
+    border-radius: 30px;
+    background: linear-gradient(to right, #5d99d1 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 2s ease-out;
+    color: #3d4852;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+#submit:hover {
+    color: white;
+    background-position: left bottom;
+    transition: all 2s ease;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.heading p {
+    font-size: 2.3rem;
+    background-color: burlywood;
+    color: brown;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid brown;
+
+}
+
+.headingName {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.wel {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#names {
+    font-family: fantasy;
+    color: red;
+}
+
+.let {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.play {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 300px;
+}
+
+.pl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    border: 3px solid brown;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#amt ,#No {
+    border-radius: 10px;
+    height: 60px !important;
+}
+
+.bet {
+    height: 45px;
+    width: 200px;
+    border: 2px solid burlywood;
+    border-radius: 30px;
+    background: linear-gradient(to right, burlywood 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 2s ease-out;
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.bet:hover {
+    background-position: left bottom;
+    transition: all 2s ease;
+}
+
+.dice {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.result{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.won{
+    display: none;
+    width: 500px;
+}
+.loos{
+    display: none;
+    width: 500px;
+}
+.won img , .loos img{
+    width: 500px;
+}
+
+footer{
+    margin-top: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.home{
+   cursor: pointer; 
+   font-size: 2rem;
+}
+    

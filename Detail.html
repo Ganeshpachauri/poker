@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate's Casino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pc">
+        <h1>Pirate's Casino</h1>
+    </div>
+    <div>
+        <div class="home" ><i class='bx bxs-home' onclick="home()"></i></div>
+    </div>
+    <div class="disclaimer">
+        <div>
+            <marquee>
+                <p> <b>Disclaimer:</b> Playing Casino can cause you damage and that damage is financial. Play at your
+                    own risk.</p>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="detailForm">
+        <div class="detailForms">
+            <div class="formheading">
+                Enter Your Details.
+            </div>
+            <form class="form" method="post" onsubmit="play(event)">
+                <input type="text" class="input" id="name" placeholder="Enter Your Name" required>
+                <input type="number" class="input" id="amount" placeholder="Enter the bet amount" required>
+                <input type="tel" class="input" id="phone" placeholder="Enter the Phone No">
+                <input type="submit" id="submit" value="Play">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2021 - Pirate's Casino
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

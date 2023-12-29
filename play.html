@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate's Casino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pc">
+        <h1>Pirate's Casino</h1>
+    </div>
+    <div>
+        <div class="home" ><i class='bx bxs-home' onclick="home()"></i></div>
+    </div>
+    <div class="heading">
+        <p><b>Welcome to Pirate's Casino!</b></p>
+    </div>
+    <div class="headingName">
+        <p class="wel"> Hello, <span id="names"></span> .
+            Your current balance is:<span id="balance"></span>.</p>
+        </p>
+    </div>
+    <div class="let">
+        <span>
+            Let's Get Started !!!
+        </span>
+    </div>
+
+    <div class="play">
+        <div class="pl">
+            <input type="number" id="amt" placeholder="Enter your bet Amount" class="input">
+            <input type="number" id="No" placeholder="Enter your bet Number" class="input">
+            <button onclick="bet()" class="bet">Roll the Dice </button>
+        </div>
+    </div>
+
+    <div class="dice" id="dices">
+        <video id="video" autoplay muted loop>
+            <source src="rolling.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <div class="result" id="result">
+        <div class="won" id="won">
+            <img src="won.jpg" alt="">
+            <p class="res">
+                Congratulations, You won!!!
+            </p>
+        </div>
+        <div class="loos" id="loos">
+            <img src="loos.jpg" alt="">
+            <p class="res">
+                Better Luck Next Time!!!
+            </p>
+        </div>
+        <button class="bet" onclick="playAgain()">Play Again</button>
+    </div>
+    <footer>
+        &copy; 2021 - Pirate's Casino
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script1.js"></script>
+</body>
+
+</html>
